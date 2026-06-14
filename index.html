@@ -1,9 +1,129 @@
-<!DOCTYPE html><html><head><title>Akash CSC Center Uleta</title></head><body>
-<h1>Akash CSC Center Uleta</h1>
-<p>CSC ID: 222231340015</p>
-<p>Mobile: 8813949423, 9518046946</p>
-<a href="customer-login.html">Customer Login</a> |
-<a href="admin-login.html">Admin Login</a>
-<a href="admin-login.html">Admin Login</a>
-</body></html>
-</h2>img src="image_e9f04983.png" alt="A descriptive summary of the image ">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Digital Seva - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border-top: 5px solid #005f73;
+        }
+
+        .login-container h2 {
+            color: #005f73;
+            margin-bottom: 10px;
+        }
+
+        .login-container p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .input-group input:focus {
+            border-color: #005f73;
+            outline: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #005f73;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #0a9396;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            font-size: 0.85em;
+        }
+
+        .footer-links a {
+            color: #005f73;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Digital Seva Connect</h2>
+    <p>Gateway to CSC Network</p>
+    
+    <form action="/login-endpoint" method="POST">
+        <div class="input-group">
+            <label for="csc-id">CSC ID</label>
+            <input type="text" id="csc-id" name="csc_id" placeholder="Enter your CSC ID" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </div>
+        
+        <button type="submit" class="login-btn">Sign In</button>
+    </form>
+    
+    <div class="footer-links">
+        <p><a href="#">Forgot password?</a></p>
+        <p>New to CSC? <a href="https://register.csc.gov.in/" target="_blank">Register as a VLE</a></p>
+    </div>
+</div>
+
+</body>
+  </html>
+  
